@@ -65,6 +65,7 @@ namespace Gordon360.Services
         bool StoreUserRooms(String userId, String roomId);
         IEnumerable<MessageViewModel> GetMessages(string roomId);
         IEnumerable<GroupViewModel> GetRooms(string userId);
+        List<Object> GetRoomById(string userId);
     }
 
     public interface IActivityService
@@ -266,6 +267,7 @@ namespace Gordon360.Services
     public interface IHousingService
     {
         IEnumerable<HousingViewModel> GetAll();
+        IEnumerable<HousingAppToSubmitViewModel> SaveApplication(string username, string sess_cde, string [] appIds);
     }
 
 }
