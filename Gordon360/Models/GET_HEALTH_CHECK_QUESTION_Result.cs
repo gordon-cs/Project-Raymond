@@ -10,15 +10,11 @@
 namespace Gordon360.Models
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class CUSTOM_PROFILE
+    public partial class GET_HEALTH_CHECK_QUESTION_Result
     {
-        public string username { get; set; }
-        public string facebook { get; set; }
-        public string twitter { get; set; }
-        public string instagram { get; set; }
-        public string linkedin { get; set; }
-        public string handshake { get; set; }
+        public string question { get; set; }
+        public string yesPrompt { get; set; }
+        public string noPrompt { get; set; }
     }
 }

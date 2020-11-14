@@ -12,15 +12,16 @@ namespace Gordon360.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class CM_SESSION_MSTR
+    public partial class Clifton_Strengths
     {
-        public string SESS_CDE { get; set; }
-        public string SESS_DESC { get; set; }
-        public Nullable<System.DateTime> SESS_BEGN_DTE { get; set; }
-        public Nullable<System.DateTime> SESS_END_DTE { get; set; }
-        public Nullable<System.DateTime> WHEEL_BEGN_DTE { get; set; }
-        public Nullable<System.DateTime> WHEEL_END_DTE { get; set; }
-        public string YRTRM_CDE_2 { get; set; }
-        public string YRTRM_CDE_4 { get; set; }
+        public int ID_NUM { get; set; }
+        public string ACCESS_CODE { get; set; }
+        public string EMAIL { get; set; }
+        public System.DateTime DTE_COMPLETED { get; set; }
+        public string THEME_1 { get; set; }
+        public string THEME_2 { get; set; }
+        public string THEME_3 { get; set; }
+        public string THEME_4 { get; set; }
+        public string THEME_5 { get; set; }
     }
 }

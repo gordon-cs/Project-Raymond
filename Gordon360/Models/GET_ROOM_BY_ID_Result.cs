@@ -10,15 +10,14 @@
 namespace Gordon360.Models
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class CUSTOM_PROFILE
+    public partial class GET_ROOM_BY_ID_Result
     {
-        public string username { get; set; }
-        public string facebook { get; set; }
-        public string twitter { get; set; }
-        public string instagram { get; set; }
-        public string linkedin { get; set; }
-        public string handshake { get; set; }
+        public string room_id { get; set; }
+        public string name { get; set; }
+        public bool group { get; set; }
+        public System.DateTime createdAt { get; set; }
+        public System.DateTime lastupdated { get; set; }
+        public byte[] roomImage { get; set; }
     }
 }

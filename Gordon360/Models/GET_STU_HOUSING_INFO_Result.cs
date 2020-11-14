@@ -10,15 +10,17 @@
 namespace Gordon360.Models
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class CUSTOM_PROFILE
+    public partial class GET_STU_HOUSING_INFO_Result
     {
-        public string username { get; set; }
-        public string facebook { get; set; }
-        public string twitter { get; set; }
-        public string instagram { get; set; }
-        public string linkedin { get; set; }
-        public string handshake { get; set; }
+        public string ID { get; set; }
+        public string Title { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string OnOffCampus { get; set; }
+        public string BuildingDescription { get; set; }
+        public string OnCampusRoom { get; set; }
+        public string Gender { get; set; }
+        public string Email { get; set; }
     }
 }

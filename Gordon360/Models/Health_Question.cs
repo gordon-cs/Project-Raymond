@@ -12,15 +12,11 @@ namespace Gordon360.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class CM_SESSION_MSTR
+    public partial class Health_Question
     {
-        public string SESS_CDE { get; set; }
-        public string SESS_DESC { get; set; }
-        public Nullable<System.DateTime> SESS_BEGN_DTE { get; set; }
-        public Nullable<System.DateTime> SESS_END_DTE { get; set; }
-        public Nullable<System.DateTime> WHEEL_BEGN_DTE { get; set; }
-        public Nullable<System.DateTime> WHEEL_END_DTE { get; set; }
-        public string YRTRM_CDE_2 { get; set; }
-        public string YRTRM_CDE_4 { get; set; }
+        public string Question { get; set; }
+        public string YesPrompt { get; set; }
+        public string NoPrompt { get; set; }
+        public Nullable<System.DateTime> Timestamp { get; set; }
     }
 }
